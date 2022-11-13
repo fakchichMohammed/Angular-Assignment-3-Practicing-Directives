@@ -2,5 +2,5 @@
 <button (click)="onDisplayDetails()">Display details</button>
 <p *ngIf="displayDetails">{{ details }}</p>
 <ul class="logs" *ngFor="let log of logs; index as i">
-  <li>The button was clicked: {{i}} once</li>
+  <li [ngStyle]="giveStyle(i)">The button was clicked: {{i}} once</li>
 </ul>

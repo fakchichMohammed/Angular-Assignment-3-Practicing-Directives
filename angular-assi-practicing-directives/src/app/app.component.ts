@@ -10,7 +10,7 @@ export class AppComponent {
   displayDetails: boolean = false;
   details: string = 'This is secret !'
   logs:Array<number> = []
-  logId: number = 0
+  logId: number = 1
   
   // <-- Add button wich says Display details
     onDisplayDetails(): void {
@@ -39,6 +39,21 @@ export class AppComponent {
   //
 
   // <-- Staring at the 5 log item, give all the log items a blue background, and white color using (ngClass & ngStyle)
-
+    giveStyle(index: number): {} {
+      let backgroundColor = 'blue'
+      let styles = {
+        'background-color': 'blue',
+        'color': 'white'
+      }
+      // <-- give the background-color as blue starting from the 5 log item
+        if (index <= 3) {
+          styles = {
+            'background-color': 'none',
+            'color': 'none'
+          }
+        }
+        return styles
+      //
+    }
   //
 }
