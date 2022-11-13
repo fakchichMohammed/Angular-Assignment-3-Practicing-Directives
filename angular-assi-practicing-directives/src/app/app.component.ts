@@ -40,12 +40,11 @@ export class AppComponent {
 
   // <-- Staring at the 5 log item, give all the log items a blue background, and white color using (ngClass & ngStyle)
     giveStyle(index: number): {} {
-      let backgroundColor = 'blue'
       let styles = {
         'background-color': 'blue',
         'color': 'white'
       }
-      // <-- give the background-color as blue starting from the 5 log item
+      // <-- give the background-color as blue and the text color as white starting from the 5 log item
         if (index <= 3) {
           styles = {
             'background-color': 'none',
