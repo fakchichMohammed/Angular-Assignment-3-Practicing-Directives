@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-assi-practicing-directives';
   // <-- Add button wich says Display details
-
+    onDisplayDetails():void {
+      
+    }
   //
 
   // <-- Add a paragraph to display the details
