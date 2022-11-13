@@ -8,12 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-assi-practicing-directives';
   displayDetails: boolean = false;
+  details: string = 'This is secret !'
 
   // <-- Add button wich says Display details
     onDisplayDetails(): void {
       // <-- Display the paragraph with a basic text like : "This is secret!"
-      if (this.displayDetails == true) this.displayDetails = false;
-      else this.displayDetails = true;
+        // <-- Toggle the displaying of the paragraph with the button clicks
+          if (this.displayDetails == true) this.displayDetails = false;
+          else this.displayDetails = true;
+        //
       //
     }
   //
@@ -22,9 +25,7 @@ export class AppComponent {
 
   //
 
-  // <-- Toggle the displaying of the paragraph with the button
-
-  //
+  
 
   // <-- Log all the button clicks, and output them bellow the paragraph
 
